@@ -7,8 +7,8 @@ LIBTFT = libft/libft.a
 all:
 	cd ft_printf && make
 	cd libft && make
-	$(CC) $(FLAGS) src/server.c $(PRINTF) $(LIBTFT) -o server
 	$(CC) $(FLAGS) src/client.c $(PRINTF) $(LIBTFT) -o client
+	$(CC) $(FLAGS) src/server.c $(PRINTF) $(LIBTFT) -o server
 
 clean:
 		cd ft_printf && make clean
